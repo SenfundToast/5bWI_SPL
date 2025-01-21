@@ -9,7 +9,7 @@ export default function EditCardPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log("Card Data:", { title, description, imageUrl, altText });
-        // Add logic to save or update card data
+// Add logic to save or update card data
     };
 
     return (
