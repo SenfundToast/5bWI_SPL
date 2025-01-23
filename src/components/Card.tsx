@@ -1,9 +1,18 @@
-import React from 'react'
+interface CardProps {
+    title: string;
+    description: string;
+    imageUrl: string;
+    altText: string;
+}
 
-type Props = {}
-
-export default function Card({}: Props) {
-  return (
-    <div>Card</div>
-  )
+export default function Card({ title, description, imageUrl, altText }: CardProps) {
+    return (
+        <div className="border rounded-lg overflow-hidden shadow-md">
+            <img src={imageUrl} alt={altText} className="w-full h-48 object-cover" />
+            <div className="p-4">
+                <h2 className="text-xl font-bold">{title}</h2>
+                <p className="text-gray-600">{description}</p>
+            </div>
+        </div>
+    );
 }

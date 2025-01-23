@@ -17,7 +17,8 @@ export default function EditCardPage() {
             <form
                 className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md"
                 onSubmit={handleSubmit}
-            >                <h2 className="text-2xl font-bold mb-4 text-center">AddPage</h2>
+            >
+                <h2 className="text-2xl font-bold mb-4 text-center">AddPage</h2>
                 <div className="mb-4">
                     <label htmlFor="title" className="block text-gray-700">
                         Title
