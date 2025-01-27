@@ -8,13 +8,14 @@ export function App() {
             <div className="min-h-screen bg-gray-100">
                 <header className="bg-white shadow-sm py-6">
                     <h1 className="text-3xl font-bold text-center text-gray-800">
-                        Photo Gallery
+                        HTL Dornbirn
                     </h1>
                 </header>
                 <main className="container mx-auto py-8">
                     <Routes>
                         <Route path="/" element={<CardContainer />} />
                         <Route path="/add" element={<EditCardPage />} />
+                        //<Route path="/hauseubungen" element={<div>hello world</div>} />
                     </Routes>
                 </main>
             </div>
